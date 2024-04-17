@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="match_parent"
+        tools:context=".uiwidget.LocationPicker" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/ImageView_searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/EditText_search"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/ImageView_searchIcon"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/Button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/EditText_search"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#72CEF8"
+            android:text="Search"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/Button_currLocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#72CEF8"
+        android:text="Use Current Location"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/Button_finish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#72CEF8"
+        android:text="GOOD TO GO!👍"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

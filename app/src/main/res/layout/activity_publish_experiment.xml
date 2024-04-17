@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/abril_fatface"
+        android:text="New Experiment for: "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/RadioGroup_expType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/RadioButton_binomial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Binomial" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Count" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_measurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measurement" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_nonnegative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NonNegative" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EditText_description"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textbox_outline"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="  Experiment Description" />
+
+    <EditText
+        android:id="@+id/EditText_minNumOfTrials"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:hint="Min. Number of Trials"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Button_pickLocation"
+        android:layout_width="345dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#72CEF8"
+        android:textColor="@color/white"
+        android:text="Pick a Region" />
+
+    <CheckBox
+        android:id="@+id/CheckBox_requireLocation"
+        android:layout_width="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Require Location for Trials" />
+
+    <Button
+        android:id="@+id/Button_publish"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#72CEF8"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:text="Publish Now ☁️" />
+</LinearLayout>
